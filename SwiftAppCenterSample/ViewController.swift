@@ -1,12 +1,5 @@
-//
-//  ViewController.swift
-//  SwiftAppCenterSample
-//
-//  Created by Shinya Nakajima on 2018/07/07.
-//  Copyright © 2018年 nakasho. All rights reserved.
-//
-
 import UIKit
+import TinyConstraints
 
 class ViewController: UIViewController {
 

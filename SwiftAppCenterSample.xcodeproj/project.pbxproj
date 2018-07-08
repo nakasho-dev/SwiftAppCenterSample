@@ -13,6 +13,11 @@
 		8959311320F103AA00EE7279 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8959311120F103AA00EE7279 /* LaunchScreen.storyboard */; };
 		8959311E20F103AB00EE7279 /* SwiftAppCenterSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8959311D20F103AB00EE7279 /* SwiftAppCenterSampleTests.swift */; };
 		8959312920F103AB00EE7279 /* SwiftAppCenterSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8959312820F103AB00EE7279 /* SwiftAppCenterSampleUITests.swift */; };
+		8959313820F2531B00EE7279 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8959313720F2531B00EE7279 /* Nimble.framework */; };
+		8959313A20F2537B00EE7279 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8959313720F2531B00EE7279 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8959313C20F25D1D00EE7279 /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8959313B20F25D1D00EE7279 /* TinyConstraints.framework */; };
+		8959314120F2614300EE7279 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8959314020F2614300EE7279 /* BrightFutures.framework */; };
+		8959314320F2615000EE7279 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8959314220F2615000EE7279 /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +37,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8959313920F2535C00EE7279 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8959313A20F2537B00EE7279 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8959310520F103A900EE7279 /* SwiftAppCenterSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAppCenterSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8959310820F103A900EE7279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +63,10 @@
 		8959312420F103AB00EE7279 /* SwiftAppCenterSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAppCenterSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8959312820F103AB00EE7279 /* SwiftAppCenterSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAppCenterSampleUITests.swift; sourceTree = "<group>"; };
 		8959312A20F103AB00EE7279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8959313720F2531B00EE7279 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		8959313B20F25D1D00EE7279 /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = Carthage/Build/iOS/TinyConstraints.framework; sourceTree = "<group>"; };
+		8959314020F2614300EE7279 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
+		8959314220F2615000EE7279 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8959314320F2615000EE7279 /* Result.framework in Frameworks */,
+				8959314120F2614300EE7279 /* BrightFutures.framework in Frameworks */,
+				8959313C20F25D1D00EE7279 /* TinyConstraints.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8959313820F2531B00EE7279 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +105,7 @@
 				8959311C20F103AB00EE7279 /* SwiftAppCenterSampleTests */,
 				8959312720F103AB00EE7279 /* SwiftAppCenterSampleUITests */,
 				8959310620F103A900EE7279 /* Products */,
+				8959313620F2531A00EE7279 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +149,17 @@
 			path = SwiftAppCenterSampleUITests;
 			sourceTree = "<group>";
 		};
+		8959313620F2531A00EE7279 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8959314220F2615000EE7279 /* Result.framework */,
+				8959314020F2614300EE7279 /* BrightFutures.framework */,
+				8959313B20F25D1D00EE7279 /* TinyConstraints.framework */,
+				8959313720F2531B00EE7279 /* Nimble.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +170,7 @@
 				8959310120F103A900EE7279 /* Sources */,
 				8959310220F103A900EE7279 /* Frameworks */,
 				8959310320F103A900EE7279 /* Resources */,
+				8959313F20F25F4300EE7279 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -149,6 +188,7 @@
 				8959311520F103AB00EE7279 /* Sources */,
 				8959311620F103AB00EE7279 /* Frameworks */,
 				8959311720F103AB00EE7279 /* Resources */,
+				8959313920F2535C00EE7279 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -246,6 +286,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8959313F20F25F4300EE7279 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/TinyConstraints.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8959310120F103A900EE7279 /* Sources */ = {
@@ -420,6 +479,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 862947V3YT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftAppCenterSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -439,6 +502,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 862947V3YT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftAppCenterSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -459,6 +526,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 862947V3YT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftAppCenterSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -480,6 +551,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 862947V3YT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftAppCenterSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
