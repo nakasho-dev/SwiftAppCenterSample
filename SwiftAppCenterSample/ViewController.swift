@@ -9,6 +9,18 @@ class ViewController: UIViewController {
     let translatedLabel = UILabel()
     let translatedText = UITextView()
     
+    let translateService: TranslateServiceProtocol
+    
+    init(translateService: TranslateServiceProtocol = TranslateService()) {
+        self.translateService = translateService
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
@@ -18,6 +30,11 @@ class ViewController: UIViewController {
         inputLabel.text = "翻訳したい日本語"
         translateButton.setTitle("英語に翻訳する", for: .normal)
         translatedLabel.text = "翻訳された英語"
+        translateButton.addTarget(
+            self,
+            action: #selector(translateButtonWasTapped),
+            for: .touchUpInside
+        )
     }
 
     private func addSubviews() {
@@ -71,6 +88,17 @@ class ViewController: UIViewController {
         translatedText.width(375)
         translatedText.height(200)
         translatedText.centerXToSuperview()
+    }
+
+    @objc private func translateButtonWasTapped() {
+        translateService.translate(text: inputText.text!)
+            .onSuccess { [weak self] resultText in
+                guard let weakSelf = self else { return }
+                weakSelf.translatedText.text = resultText
+        }
+            .onFailure { [weak self] error in
+                guard let weakSelf = self else { return }
+        }
     }
 
     override func didReceiveMemoryWarning() {

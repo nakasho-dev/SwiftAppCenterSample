@@ -11,13 +11,15 @@
 		8959310B20F103A900EE7279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8959310A20F103A900EE7279 /* ViewController.swift */; };
 		8959311020F103AA00EE7279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8959310F20F103AA00EE7279 /* Assets.xcassets */; };
 		8959311320F103AA00EE7279 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8959311120F103AA00EE7279 /* LaunchScreen.storyboard */; };
-		8959311E20F103AB00EE7279 /* SwiftAppCenterSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8959311D20F103AB00EE7279 /* SwiftAppCenterSampleTests.swift */; };
+		8959311E20F103AB00EE7279 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8959311D20F103AB00EE7279 /* ViewControllerTests.swift */; };
 		8959312920F103AB00EE7279 /* SwiftAppCenterSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8959312820F103AB00EE7279 /* SwiftAppCenterSampleUITests.swift */; };
 		8959313820F2531B00EE7279 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8959313720F2531B00EE7279 /* Nimble.framework */; };
 		8959313A20F2537B00EE7279 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8959313720F2531B00EE7279 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8959313C20F25D1D00EE7279 /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8959313B20F25D1D00EE7279 /* TinyConstraints.framework */; };
 		8959314120F2614300EE7279 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8959314020F2614300EE7279 /* BrightFutures.framework */; };
 		8959314320F2615000EE7279 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8959314220F2615000EE7279 /* Result.framework */; };
+		8959314520F509D500EE7279 /* TranslateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8959314420F509D500EE7279 /* TranslateService.swift */; };
+		8959314720F50A1C00EE7279 /* FakeTranslateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8959314620F50A1C00EE7279 /* FakeTranslateService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +60,7 @@
 		8959311220F103AA00EE7279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8959311420F103AA00EE7279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8959311920F103AB00EE7279 /* SwiftAppCenterSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAppCenterSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8959311D20F103AB00EE7279 /* SwiftAppCenterSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAppCenterSampleTests.swift; sourceTree = "<group>"; };
+		8959311D20F103AB00EE7279 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		8959311F20F103AB00EE7279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8959312420F103AB00EE7279 /* SwiftAppCenterSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAppCenterSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8959312820F103AB00EE7279 /* SwiftAppCenterSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAppCenterSampleUITests.swift; sourceTree = "<group>"; };
@@ -67,6 +69,8 @@
 		8959313B20F25D1D00EE7279 /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = Carthage/Build/iOS/TinyConstraints.framework; sourceTree = "<group>"; };
 		8959314020F2614300EE7279 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
 		8959314220F2615000EE7279 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		8959314420F509D500EE7279 /* TranslateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateService.swift; sourceTree = "<group>"; };
+		8959314620F50A1C00EE7279 /* FakeTranslateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTranslateService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 				8959310F20F103AA00EE7279 /* Assets.xcassets */,
 				8959311120F103AA00EE7279 /* LaunchScreen.storyboard */,
 				8959311420F103AA00EE7279 /* Info.plist */,
+				8959314420F509D500EE7279 /* TranslateService.swift */,
 			);
 			path = SwiftAppCenterSample;
 			sourceTree = "<group>";
@@ -134,8 +139,9 @@
 		8959311C20F103AB00EE7279 /* SwiftAppCenterSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				8959311D20F103AB00EE7279 /* SwiftAppCenterSampleTests.swift */,
+				8959311D20F103AB00EE7279 /* ViewControllerTests.swift */,
 				8959311F20F103AB00EE7279 /* Info.plist */,
+				8959314620F50A1C00EE7279 /* FakeTranslateService.swift */,
 			);
 			path = SwiftAppCenterSampleTests;
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8959314520F509D500EE7279 /* TranslateService.swift in Sources */,
 				8959310B20F103A900EE7279 /* ViewController.swift in Sources */,
 				8959310920F103A900EE7279 /* AppDelegate.swift in Sources */,
 			);
@@ -320,7 +327,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8959311E20F103AB00EE7279 /* SwiftAppCenterSampleTests.swift in Sources */,
+				8959311E20F103AB00EE7279 /* ViewControllerTests.swift in Sources */,
+				8959314720F50A1C00EE7279 /* FakeTranslateService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
