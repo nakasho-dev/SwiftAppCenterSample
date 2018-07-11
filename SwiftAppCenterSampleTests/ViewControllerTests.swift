@@ -16,7 +16,7 @@ class ViewControllerTests: XCTestCase {
         _ = subject.view
     }
     
-    func test_tapTranslateButton() {
+    func test_tapTranslateButton_putTransratedText_whenTranltateServiceWasSuccess() {
         subject.inputText.text = "jp-text"
         let resultText = "en-text"
         
@@ -25,5 +25,18 @@ class ViewControllerTests: XCTestCase {
 
         expect(self.fakeTranslateService.translate_args).to(equal("jp-text"))
         expect(self.subject.translatedText.text).toEventually(equal(resultText))
+        
     }
+    
+    func test_tapTranslateButton_putNetworkFailedText_whenTranltateServiceWasNetworkFailure() {
+        subject.inputText.text = "jp-text"
+        
+        subject.translateButton.sendActions(for: .touchUpInside)
+        fakeTranslateService.translate_promise
+            .failure(AppError.NetworkFailed)
+       
+        expect(self.subject.translatedText.text)
+            .toEventually(equal("通信に失敗しました"))
+    }
+
 }

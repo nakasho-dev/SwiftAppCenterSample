@@ -98,6 +98,7 @@ class ViewController: UIViewController {
         }
             .onFailure { [weak self] error in
                 guard let weakSelf = self else { return }
+                weakSelf.translatedText.text = "通信に失敗しました"
         }
     }
 
