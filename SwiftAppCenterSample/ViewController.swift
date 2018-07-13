@@ -98,7 +98,13 @@ class ViewController: UIViewController {
         }
             .onFailure { [weak self] error in
                 guard let weakSelf = self else { return }
-                weakSelf.translatedText.text = "通信に失敗しました"
+                
+                switch error {
+                case AppError.NetworkFailed:
+                    weakSelf.translatedText.text = "通信に失敗しました"
+                case AppError.ParseFailed:
+                    weakSelf.translatedText.text = "JSONの解析に失敗しました"
+                }
         }
     }
 

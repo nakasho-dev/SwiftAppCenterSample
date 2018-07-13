@@ -39,4 +39,15 @@ class ViewControllerTests: XCTestCase {
             .toEventually(equal("通信に失敗しました"))
     }
 
+    func test_tapTranslateButton_putParseFailedText_whenTranltateServiceWasParseFailure() {
+        subject.inputText.text = "jp-text"
+        
+        subject.translateButton.sendActions(for: .touchUpInside)
+        fakeTranslateService.translate_promise
+            .failure(AppError.ParseFailed)
+        
+        expect(self.subject.translatedText.text)
+            .toEventually(equal("JSONの解析に失敗しました"))
+    }
+    
 }
