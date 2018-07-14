@@ -49,5 +49,4 @@ class ViewControllerTests: XCTestCase {
         expect(self.subject.translatedText.text)
             .toEventually(equal("JSONの解析に失敗しました"))
     }
-    
 }
