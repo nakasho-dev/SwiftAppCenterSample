@@ -4,11 +4,11 @@ import BrightFutures
 @testable import SwiftAppCenterSample
 
 class FakeDefaultHttp: DefaultHttpProtocol {
-    var get_promise: Promise<Any, AppError>!
-    var get_args: String!
-    func get(path: String) -> Future<Any, AppError> {
-        get_promise = Promise<Any, AppError>()
-        self.get_args = path
-        return get_promise.future
+    var post_promise: Promise<Any, AppError>!
+    var post_args: String!
+    func post(path: String) -> Future<Any, AppError> {
+        post_promise = Promise<Any, AppError>()
+        self.post_args = path
+        return post_promise.future
     }
 }

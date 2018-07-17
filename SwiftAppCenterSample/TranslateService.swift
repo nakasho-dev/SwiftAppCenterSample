@@ -11,12 +11,10 @@ protocol TranslateServiceProtocol {
 }
 
 class TranslateService: TranslateServiceProtocol {
-    
     init(
         http: DefaultHttpProtocol = DefaultHttp(),
         parser: TranslateResultParserProtocol = TranslateResultParser()
         ) {
-        
     }
     
     func translate(text: String) -> Future<String, AppError> {
