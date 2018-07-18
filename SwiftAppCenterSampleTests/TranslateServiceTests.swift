@@ -23,5 +23,4 @@ class TranslateServiceTests: XCTestCase {
     func test_translate_() {
         
     }
-    
 }
