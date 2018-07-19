@@ -20,7 +20,7 @@ class TranslateServiceTests: XCTestCase {
         )
     }
     
-    func test_translate_() {
+    func test_translate() {
         
     }
 }
