@@ -1,5 +1,4 @@
 import Foundation
-import Result
 
 protocol TranslateResultParserProtocol {
     func parse(data: Any) -> Result<TranslateResult, AppError>

@@ -19,8 +19,4 @@ class TranslateServiceTests: XCTestCase {
             parser: fakeTranslateResultParser
         )
     }
-    
-    func test_translate() {
-        
-    }
 }

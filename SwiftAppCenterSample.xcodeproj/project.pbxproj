@@ -17,7 +17,6 @@
 		8959313A20F2537B00EE7279 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8959313720F2531B00EE7279 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8959313C20F25D1D00EE7279 /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8959313B20F25D1D00EE7279 /* TinyConstraints.framework */; };
 		8959314120F2614300EE7279 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8959314020F2614300EE7279 /* BrightFutures.framework */; };
-		8959314320F2615000EE7279 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8959314220F2615000EE7279 /* Result.framework */; };
 		8959314520F509D500EE7279 /* TranslateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8959314420F509D500EE7279 /* TranslateService.swift */; };
 		8959314720F50A1C00EE7279 /* FakeTranslateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8959314620F50A1C00EE7279 /* FakeTranslateService.swift */; };
 		89F0072E20FCDCA000938138 /* TranslateServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F0072D20FCDCA000938138 /* TranslateServiceTests.swift */; };
@@ -90,7 +89,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8959314320F2615000EE7279 /* Result.framework in Frameworks */,
 				8959314120F2614300EE7279 /* BrightFutures.framework in Frameworks */,
 				8959313C20F25D1D00EE7279 /* TinyConstraints.framework in Frameworks */,
 			);
@@ -257,10 +255,12 @@
 					};
 					8959311820F103AB00EE7279 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1030;
 						TestTargetID = 8959310420F103A900EE7279;
 					};
 					8959312320F103AB00EE7279 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1030;
 						TestTargetID = 8959310420F103A900EE7279;
 					};
 				};
@@ -320,13 +320,12 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/TinyConstraints.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -523,7 +522,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.ukky.sample.SwiftAppCenterSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -546,7 +545,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.ukky.sample.SwiftAppCenterSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -570,7 +569,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.ukky.sample.SwiftAppCenterSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftAppCenterSample.app/SwiftAppCenterSample";
 			};
@@ -595,7 +594,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.ukky.sample.SwiftAppCenterSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftAppCenterSample.app/SwiftAppCenterSample";
 			};
@@ -615,7 +614,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.ukky.sample.SwiftAppCenterSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SwiftAppCenterSample;
 			};
@@ -635,7 +634,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.ukky.sample.SwiftAppCenterSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SwiftAppCenterSample;
 			};
