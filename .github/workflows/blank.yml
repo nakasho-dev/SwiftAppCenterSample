@@ -19,4 +19,6 @@ jobs:
       run: carthage update --platform iOS
     - name: show simulator list
       run: xcrun instruments -s
+    - name: xcode test
+      run: xcodebuild test -project SwiftAppCenterSample.xcodeproj -scheme Debug -destination 'platform=iOS Simulator,name=iPhone Xs,OS=12.2'
       
