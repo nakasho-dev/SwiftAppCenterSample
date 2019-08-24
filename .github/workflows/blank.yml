@@ -17,3 +17,6 @@ jobs:
         echo test, and deploy your project.
     - name: Carthage
       run: carthage update --platform iOS
+    - name: show simulator list
+      run: xcrun instruments -s
+      
