@@ -21,4 +21,4 @@ jobs:
       run: xcrun instruments -s
     - name: xcode test
       run: xcodebuild test -project SwiftAppCenterSample.xcodeproj -scheme SwiftAppCenterSample -destination 'platform=iOS Simulator,name=iPhone Xs,OS=12.2'
-      
+
